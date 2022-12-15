@@ -38,3 +38,6 @@
 ## **Work experience**
    * Programmed desktop applications in Delphi, Visual Basic, Pascal.
    * Made macros to automate work in Visual Basic for Applications
+
+## **Education**
+   * Ufa State Aviation Technological University in Ufa. Specialty: Mechatronics
