@@ -41,3 +41,7 @@
 
 ## **Education**
    * Ufa State Aviation Technological University in Ufa. Specialty: Mechatronics
+
+## **Languages:**
+   * Russian - Native
+   * English - Intermediate
