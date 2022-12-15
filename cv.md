@@ -21,3 +21,16 @@
    * Pascal
    * Visual Basic
    * 3D design (SolidWorks)
+
+## **Code example**
+```
+<html>
+<body></body>
+<script>
+    alert("Hello");
+        let firstNUmber = Number(prompt("Enter the first number"));   
+        let secondNumber = Number(prompt("Enter the second number"));
+    alert("The sum of the numbers is "+(firstNUmber+secondNumber));
+</script>
+</html>
+```
