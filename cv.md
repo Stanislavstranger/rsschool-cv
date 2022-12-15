@@ -12,3 +12,12 @@
 
    I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.  
 
+## **Skills and Proficiency:**
+   * C Basic
+   * Java Basic
+   * Python Basic
+   * JavaScript Basic
+   * Delfi
+   * Pascal
+   * Visual Basic
+   * 3D design (SolidWorks)
