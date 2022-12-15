@@ -1,4 +1,4 @@
-# [rsschool-cv](https://stanislavstranger.github.io/rsshool-cv/cv)
+# [rsschool-cv](https://stanislavstranger.github.io/rsschool-cv/cv)
 # **Stanislav Goloborodov**
 
 ## **Contact information:**
