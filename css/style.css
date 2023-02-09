@@ -1,0 +1,107 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+body{
+    font-family: 'Lato', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.header { 
+    
+}
+.nav { 
+}
+.nav__list { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    height: 60px;
+    background-color: #ffca05;
+}
+.nav__list li{
+    margin: 0 0 0 10px;
+}
+.nav__item { }
+
+.main{
+    flex: 1 1 auto;
+}
+
+
+.footer { 
+    height: 60px;
+    background-color: #ffca05;
+    align-items: center;
+    display: grid;
+    grid-template: 1fr /minmax(auto, 200px) minmax(auto, 900px) minmax(auto, 200px);
+    position: relative;
+}
+.footer__github { 
+    grid-column: 1 / 2;
+    padding: 10px;
+    padding: 0 0 0 75px;
+}
+
+a.footer__github::before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background: url(/img/github-mark.svg) 0 0 / 40px 40px no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    object-fit: contain;
+}
+.footer__year {
+    grid-column: 2 / 3;
+    justify-self: center;
+}
+
+.footer__rsschool { 
+    grid-column: 3 / 4;
+    position: relative;
+    height: 40px;
+}
+.footer__rsschool img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: auto 100%;
+}
+span{
+    font-size: 20px;
+}
+
+span::before{
+    
+}
