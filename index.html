@@ -6,38 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular" rel="stylesheet" />
     <title>CV. HTML, CSS & Git Basics</title>
+    <link rel="shortcut icon" href="img/approved.png" type="image/png">
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="#About me">About me</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#Contact">Contact</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#Education">Education</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#Experience">Experience</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#Expertise">Expertise</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#Skills">Skills</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#Strengths">Strengths</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#Code">Code</a></li>
-                    </ul>
-                </nav>
-            </div>       
-        <div class="main">
+        <header class="header">
+                <div class="header__container _container">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="#about me">about me</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#education">education</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#experience">experience</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#expertise">expertise</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#skills">skills</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#strengths">strengths</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#code">code</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>       
+        <main class="main _container">
                 <div class="left-side"></div>
-                <div class="middle-side"></div>
-                <div class="right-side"></div>
-        </div>
-        <div class="footer">
-                    <a class="footer__github" href="https://github.com/Stanislavstranger" target="_blank"><span>My GitHub</span></a>
+                <div class="middle-side-top">
+                    <img src="img/IMG_20191206_162814.jpg" alt="photo">
+                </div>
+                <div class="right-side-top">
+                    <div class="right-side-top__title">
+                        <h1 class="right-side-top__title_name">Stanislav</h1>
+                        <h2 class="right-side-top__title_surname">Goloborodov</h2>
+                        <p class="right-side-top__title_job-title">Junior Front-End Developer</p>
+                    </div>
+                </div>
+                <div class="middle-side-bottom">
+                    <div class="container">
+                        <section class="about-me" id="about me">
+                            <h3 class="title">about me<span>_</span></h3>
+                            <p>I worked as a Lead Mechanical Design Engineer. Engaged in 3D design of various structures. I decided to change my profession and started studying Frontend. I like this direction because I love the visual.
+                                I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.</p>
+                        </section>
+                        <section class="contact-info" id="contact">
+                            <h3 class="title">contact info<span>_</span></h3>
+                            <ul class="title__list">
+                                <li class="title__index">
+                                    <p class="title_subtitle title">discord</p>
+                                    <a class="text" href="https://discordapp.com/users/StanislavGoloborodov#5226" target="_blank">StanislavGoloborodov#5226</a>
+                                </li>
+                                <li class="title__index">
+                                    <p class="title_subtitle title">email</p>
+                                    <a class="text" href="mailto:stanisavstranger@gmail.com" target="_blank">stanisavstranger@gmail.com</a>
+                                </li>
+                                <li class="title__index">
+                                    <p class="title_subtitle title">tel</p>
+                                    <a href="tel:+905064069176" target="_blank">+905064069176</a>
+                                </li>
+                                <li class="title__index">
+                                    <p class="title_subtitle title">telegram</p>
+                                    <a class="text" href="https://t.me/Stanislav_GV" target="_blank">@Stanislav_GV</a>
+                                </li>
+                            </ul>               
+                        </section>
+                        <section class="hobbies" id="about me">
+                            <h3 class="title">hobbies<span>_</span></h3>
+                                <ul class="hobbies__list">
+                                    <li class="hobbie__index"><img src="img/travel.png" alt="travel"></li>
+                                    <li class="hobbie__index"><img src="img/audio.png" alt="audio"></li>
+                                    <li class="hobbie__index"><img src="img/document.png" alt="document"></li>
+                                </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="right-side-bottom">
+                    <div class="container">
+                        <section class="education" id='education'>
+                            <h3 class="title">education<span>_</span></h3>
+                            <p class="subtitle title">Specialty: Mechatronics</p>
+                            <h4 class="text_yellow-cover text">2004-2009</h4>
+                            <a class="link-USATU" href="https://ugatu.su/en/" target="_blank">Ufa State Aviation Technical University</a>
+                        </section>
+                        <section class="experience" id="experience">
+                            <h3 class="title">experience<span>_</span></h3>
+                        </section>
+                        <section class="expertise" id="expertise">
+                            <h3 class="title">expertise<span>_</span></h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, vel et possimus deserunt veritatis, totam illo, nihil eius dolor eligendi deleniti consequatur illum! Esse, tempore cum dolores voluptate unde provident ratione optio veniam dignissimos veritatis consequuntur earum dicta explicabo sunt placeat possimus 
+                        </section>
+                        <section class="skills" id=skills>
+                            <h3 class="title">skills<span>_</span></h3>
+                            <p class="text"></p>
+                        </section>
+                        <section class="strengths" id="strengths">
+                            <h3 class="title">strengths<span>_</span></h3>
+                        </section>
+                        <section class="code" id="code">
+                            <h3 class="title">code<span>_</span></h3>
+                        </section>
+                    </div>
+                </div>
+        </main>
+        <footer class="footer _container">
+                    <a class="footer__github" href="https://github.com/Stanislavstranger" target="_blank">My GitHub</a>
                     <div class="footer__year">
-                        <span>2023</span>
+                        2022-2023
                     </div>
                     <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
                         <img src="img/rs_school_js.svg" alt="rs_school_logo">
                     </a>
-        </div>  
+        </footer>  
     </div>        
 </body>
 </html>
