@@ -20,7 +20,7 @@ body{
     font-family: 'Lato', sans-serif;
     color: #fff;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem ;
     letter-spacing: 0.0625rem;
     line-height: 1.25rem;
 }
@@ -31,20 +31,18 @@ body{
     flex-direction: column;
 }
 ._container{
-    max-width: 1100px;
+    max-width: none;
     margin: 0 auto;
 }
 ._ibg{
-    display: inline-block;
     position: relative;
 }
 ._ibg img{
-    
     position: absolute;
-    /* width: 100%; */
+    width: 100%;
     height: 100%;
     top: 0;
-    left: 10px;
+    left: 0;
     object-fit: cover;
 }
 a{
@@ -57,40 +55,51 @@ span{
 /* ----------------Header------------------------------------- */
 .header{
     position: relative;
-    width: 100%;
+    min-width: 100%;
     left: 0;
     top: 0;
 }
 .header__container{
-    
-}
-.nav { 
-    
-}
-.nav__list { 
     min-height: 60px;
     background-color:  #e1e1e1;
+}
+.header__menu{
+    
+}
+.header__list { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
     list-style: none;
+    min-height: 60px;
+    align-items: center;
 }
-.nav__item { 
+.header__item { 
     padding: 5px 0;
     margin: 0 0 0 10px;
 }
-.nav__link{
+.header__link{
     color: #000;
     text-transform: uppercase;
     font-family: "Bebas Neue";
     letter-spacing: 0.3125rem;
     font-size: 1.25rem;
 }
+/* @media (max-width: 950px) {
+    .header__list{
+        display: none;
+    }
+    .header__burger{
+
+    }
+} */
+
 /* ----------------Main----------------------------------------------------------------- */
 .container{
     padding: 20px;
-    position: relative;
+}
+section{
+    display: block;
 }
     
 .container > section:not(:last-child){
@@ -99,12 +108,47 @@ span{
 }
 .main{
     flex: 1 1 auto;
-    display: grid;
-    grid-template: minmax(300px, auto) 1fr/ minmax(auto, 60px) minmax(auto, 250px) minmax(auto, 890px);
-    grid-template-areas:  
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+@media (min-width: 620px) {
+    ._container{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .main {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        display: grid;
+        grid-template: minmax(auto, 300px) 1fr / 30px 250px minmax(350px, 1fr);
+        grid-template-areas:  
         "left-side" "middle-side-top" "right-side-top"
         "left-side" "middle-side-bottom" "right-side-bottom";
+	}
 }
+@media (min-width: 1000px) {
+    ._container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .main {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        display: grid;
+        grid-template: minmax(auto, 300px) 1fr / 60px 250px 1fr;
+        grid-template-areas:  
+        "left-side" "middle-side-top" "right-side-top"
+        "left-side" "middle-side-bottom" "right-side-bottom";
+	}
+}
+
 /* ----------------left-side----------------------------------------------------------------- */
 .left-side { 
     grid-area: "left-side";
@@ -113,9 +157,11 @@ span{
 }
 /* ----------------middle-side-top----------------------------------------------------------------- */
 .middle-side-top { 
+    display: block;
+    width: auto;
+    height: 300px;
     grid-area: "middle-side-top";
     position: relative;
-    height: 300px;
 }
 .middle-side-top img{
     width: 100%;
@@ -124,13 +170,23 @@ span{
     top: 0;
     left: 0;
     object-fit: cover;
-}
+}   
+/* .figure-middle-side-top{
+    display: block;
+    +
+    width: 100%;
+    height: min-content;
+    
+} */
 /* ----------------right-side-top----------------------------------------------------------------- */
 .right-side-top { 
+    width: 100%;
+    height: 300px;
     grid-area: "right-side-top";
     position: relative;
     background-color: rgb(250, 249, 249);
 }
+
 .right-side-top__title{
     text-transform: uppercase;
     color: #000;
@@ -182,8 +238,46 @@ span{
     font-size: 1rem;
     margin: 0 0 5px 0;
 }
+@media (max-width: 400px){
+    .right-side-top { 
+        width: 100%;
+        height: 200px;
+        
+    }
+    .right-side-top__title{
+        font-size: 40px;
+        letter-spacing: 3px;
+        line-height: 45px;
+        font-weight: 300;
+        position: absolute;
+        top: 35px;
+        left: 15%;
+    }
+    .right-side-top__title_surname{
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        position: relative;
+    }
+    .right-side-top__title_job-title{
+        font-size: 1.25rem;
+        letter-spacing: 0.125rem;
+        font-weight: 100;
+    }
+    .right-side-top__title_surname::after{
+        content: "";
+        position: absolute;
+        width: 50px;
+        bottom: 0;
+        height: 3px;
+        top: 50px;
+        left: 20px;
+        background-color: #ffca05;
+        margin: 0px 0px 0px -20px;
+    }
+}
 /* ----------------middle-side-bottom--------------------------------------------------- */
 .middle-side-bottom { 
+    width: 100%;
     grid-area: "middle-side-bottom";
     background-color: #292934;
 }
@@ -213,6 +307,7 @@ span{
 }
 /* ----------------right-side-bottom"--------------------------------------------------- */
 .right-side-bottom { 
+    width: 100%;
     grid-area: "right-side-bottom";
     background-color: #22222d;
 }
@@ -231,6 +326,7 @@ span{
 }
 .education__container{
     position: relative;
+    margin: 0 0 10px 0;
 }
 .education__text{
     padding: 2px 0 0 80px;
@@ -264,29 +360,59 @@ span{
 .container-text ul{
     margin: 0 0 10px 0;
 }
-code{
-    display: inline;
+code {
 }
-
+.one-tab { 
+    padding: 0 0 0 10px;
+}
+.two-tab { 
+    padding: 0 0 0 30px;
+}
+.three-tab { 
+    padding: 0 0 0 50px;
+}
 
 /* ----------------Footer------------------------------------- */
 .footer { 
-    height: 60px;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    min-height: 60px;
     background-color: #e1e1e1;
     align-items: center;
     display: grid;
-    grid-template: 1fr / minmax(auto, 200px) minmax(auto, 800px) minmax(auto, 200px);
-    position: relative;
+    grid-template: 1fr / minmax(auto, 100px) minmax(auto, 150px) minmax(auto, 750px) minmax(auto, 200px);
+    grid-area: "footer-github-logo" "footer-github-text" "footer__year" "footer__rsschool";
     color:#000;
     font-family: "Bebas Neue";
     letter-spacing: 0.3125rem;
     font-size: 1.25rem;
 }
-.footer__github { 
-    grid-column: 1 / 2;
-    padding: 0 0 0 75px;
+@media (max-width: 600px){
+    .footer {
+        display: grid;
+        grid-template: repeat(3, 1fr) / 0.7fr 1fr ;
+        grid-area: 
+            "footer-github-logo" 
+            "footer__rsschool"
+            "footer-github-text";
+            
+    }
+    .footer__year{
+        grid-column: span 2;
+    }
+    .footer__rsschool{
+        grid-column: span 2;
+    }
 }
-a.footer__github::before {
+.footer-github-logo { 
+    grid-area: "footer-github-logo";
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+/* .footer__github::before {
     content: "";
     height: 40px;
     width: 40px;
@@ -295,13 +421,29 @@ a.footer__github::before {
     top: 10px;
     left: 20px;
     object-fit: contain;
+} */
+.footer-github-logo img {
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    object-fit: contain;
+}
+.footer__github_text{
+    width: 120px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    
 }
 .footer__year {
-    grid-column: 2 / 3;
+    grid-area: "footer__year";
     justify-self: center;
 }
 .footer__rsschool { 
-    grid-column: 3 / 4;
+    grid-area: "footer__rsschool";
     position: relative;
     height: 40px;
 }
@@ -313,3 +455,4 @@ a.footer__github::before {
     left: 0;
     object-fit: contain;
 }
+

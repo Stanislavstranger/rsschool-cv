@@ -14,23 +14,28 @@
     <div class="wrapper">
         <header class="header">
                 <div class="header__container _container">
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item"><a class="nav__link" href="#about me">about me</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#education">education</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#experience">experience</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#skills">skills</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#strengths">strengths</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#languages">languages</a></li>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__item"><a class="header__link" href="#about me">about me</a></li>
+                            <li class="header__item"><a class="header__link" href="#contact">contact</a></li>
+                            <li class="header__item"><a class="header__link" href="#education">education</a></li>
+                            <li class="header__item"><a class="header__link" href="#experience">experience</a></li>
+                            <li class="header__item"><a class="header__link" href="#skills">skills</a></li>
+                            <li class="header__item"><a class="header__link" href="#strengths">strengths</a></li>
+                            <li class="header__item"><a class="header__link" href="#languages">languages</a></li>
                         </ul>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
                     </nav>
                 </div>
         </header>       
         <main class="main _container">
                 <div class="left-side"></div>
                 <div class="middle-side-top">
-                    <img src="img/IMG_20191206_162814.jpg" alt="photo">
+                    <figure class="figure-middle-side-top">
+                        <img src="img/IMG_20191206_162814.jpg" alt="photo">
+                    </figure>
                 </div>
                 <div class="right-side-top">
                     <div class="right-side-top__title">
@@ -50,19 +55,19 @@
                             <h3 class="title">contact info<span>_</span></h3>
                             <ul class="title__list">
                                 <li class="title__index">
-                                    <p class="title_subtitle title">discord</p>
+                                    <p class="title_subtitle title">discord:</p>
                                     <a class="text" href="https://discordapp.com/users/StanislavGoloborodov#5226" target="_blank">StanislavGoloborodov#5226</a>
                                 </li>
                                 <li class="title__index">
-                                    <p class="title_subtitle title">email</p>
+                                    <p class="title_subtitle title">email:</p>
                                     <a class="text" href="mailto:stanisavstranger@gmail.com" target="_blank">stanisavstranger@gmail.com</a>
                                 </li>
                                 <li class="title__index">
-                                    <p class="title_subtitle title">tel</p>
+                                    <p class="title_subtitle title">tel:</p>
                                     <a href="tel:+905064069176" target="_blank">+905064069176</a>
                                 </li>
                                 <li class="title__index">
-                                    <p class="title_subtitle title">telegram</p>
+                                    <p class="title_subtitle title">telegram:</p>
                                     <a class="text" href="https://t.me/Stanislav_GV" target="_blank">@Stanislav_GV</a>
                                 </li>
                             </ul>               
@@ -73,6 +78,7 @@
                                     <li class="hobbie__index"><img src="img/travel.png" alt="travel"></li>
                                     <li class="hobbie__index"><img src="img/audio.png" alt="audio"></li>
                                     <li class="hobbie__index"><img src="img/document.png" alt="document"></li>
+                                    <li class="hobbie__index"><img src="img/gym.png" alt="document"></li>
                                 </ul>
                         </section>
                     </div>
@@ -90,6 +96,16 @@
                                     <p class="title_subtitle title">Specialty: Junior Delphi Developer</p>
                                     <p class="text_yellow-cover text">2001-2004</p>
                                     <span class="text">Center of Computer Studies</span>
+                                </div>
+                                <div class="education__container">
+                                    <p class="title_subtitle title">Course: UpSkill Me «JavaScript/Front-end»</p>
+                                    <p class="text_yellow-cover text">Present</p>
+                                    <a class="education__text_course" href="https://rs.school/js/" target="_blank">UpSkill Me RS Scholl</a>
+                                </div>
+                                <div class="education__container">
+                                    <p class="title_subtitle title">Course: Front-End (HTML, CSS, JS)</p>
+                                    <p class="text_yellow-cover text">2022-2023</p>
+                                    <a class="education__text_course" href="https://www.youtube.com/@FreelancerLifeStyle/about" target="_blank">FreelancerLifeStyle</a>
                                 </div>
                         </section>
                         <section class="experience" id="experience">
@@ -139,23 +155,24 @@
                         </section>
                         <section class="code" id="code">
                             <h3 class="title">code<span>_</span></h3>
-                                <code><pre>
-&lthtmlgt
-&ltbody&gt
-    &ltscript&gt
-        alert("Hello");
-        let firstNUmber = Number(prompt("Enter the first number"));   
-        let secondNumber = Number(prompt("Enter the second number"));
-        alert("The sum of the numbers is "+(firstNUmber+secondNumber));
-    &lt/script&gt
-&lt/body&gt
-&lt/html&gt </pre></code>
+                                <code>
+                                    <p class="one-tab">&lthtml&gt</p>
+                                    <p class="one-tab">&ltbody&gt</p>
+                                    <p class="two-tab">&ltscript&gt</p>
+                                    <p class="three-tab">alert("Hello");</p>
+                                    <p class="three-tab">let firstNUmber = Number(prompt("Enter the first number"));</p>
+                                    <p class="three-tab">let secondNumber = Number(prompt("Enter the second number"));</p>
+                                    <p class="three-tab">alert("The sum of the numbers is "+(firstNUmber+secondNumber));</p>
+                                    <p class="two-tab">&lt/script&gt</p>
+                                    <p class="one-tab">&lt/body&gt</p>  
+                                    <p class="one-tab">&lt/html&gt</p> 
+                                </code>     
                         </section>
                         <section class="languages" id="languages">
                             <h3 class="title">languages<span>_</span></h3>
                             <div class="container-text">
                                 <ul>
-                                    <li class="text"><p>Russian - Native.</p></li>
+                                    <li class="text"><p>Russian - Native</p></li>
                                     <li class="text"><p>English - B1</p></li>
                                 </ul>
                             </div>
@@ -164,13 +181,23 @@
                 </div>
         </main>
         <footer class="footer _container">
-                    <a class="footer__github" href="https://github.com/Stanislavstranger" target="_blank">My GitHub</a>
+                    <div class="footer-github-logo">
+                        <a href="https://github.com/Stanislavstranger" target="_blank">
+                            <img src="img/github-mark.svg" alt="github_logo"></a>
+                    </div>
+                    <div class="footer-github-text">
+                        
+                        <a href="https://github.com/Stanislavstranger" target="_blank">My github
+                            </a>
+                    </div>
                     <div class="footer__year">
                         2022-2023
                     </div>
-                    <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
-                        <img src="img/rs_school_js.svg" alt="rs_school_logo">
-                    </a>
+                    <div class="footer__rsschool">
+                        <a href="https://rs.school/js/" target="_blank">
+                            <img src="img/rs_school_js.svg" alt="rs_school_logo">
+                        </a>
+                    </div>
         </footer>  
     </div>        
 </body>
