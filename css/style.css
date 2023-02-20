@@ -104,8 +104,9 @@ span{
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 0;
+    z-index: 60;
 }
 main{
     padding: 80px 0 0 0;
@@ -179,12 +180,8 @@ main{
     .header__menu.active{
         top: 0;
     }
-    .header__menu.hidden{
-        top: -100%;
-    }
     .header__list{
         padding: 60px 0 0 0;
-        justify-self: center;
     }
     body.lock{
         overflow: hidden;
@@ -468,7 +465,10 @@ section{
 .container-text ul{
     margin: 0 0 10px 0;
 }
-code {
+code span{
+    color: #fff;
+    font-size: 16px;
+    display: block;
 }
 .one-tab { 
     padding: 0 0 0 10px;
