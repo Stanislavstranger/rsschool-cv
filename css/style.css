@@ -434,9 +434,9 @@ section{
     margin: 0 0 10px 0;
 }
 .education__text{
-    padding: 2px 0 0 80px;
+    padding: 2px 0 0 0px;
 }
-.education__text::before{
+/* .education__text::before{
     content: "";
     height: 40%;
     width: 80%;
@@ -445,7 +445,7 @@ section{
     top: 27px;
     left: 95px;
     object-fit: cover;
-}
+} */
 .container-text li{
     position: relative;
     padding: 0 0 0 10px;
