@@ -67,7 +67,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-}   
+}
 .header__container{
     position: relative;
     min-height: 60px;
@@ -75,9 +75,9 @@ span{
     z-index: 2;
 }
 .header__menu{
-    
+
 }
-.header__list { 
+.header__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -85,7 +85,7 @@ span{
     min-height: 60px;
     align-items: center;
 }
-.header__item { 
+.header__item {
     padding: 5px 0;
     margin: 0 0 0 10px;
 }
@@ -98,7 +98,7 @@ span{
 }
 
 .header__burger{
-    
+
 }
 .header__burger-container{
     width: 30px;
@@ -200,10 +200,10 @@ main{
 section{
     display: block;
 }
-    
+
 .container > section:not(:last-child){
     margin: 0 0 20px 0;
-    
+
 }
 .main{
     flex: 1 1 auto;
@@ -231,7 +231,7 @@ section{
         top: 0;
         display: grid;
         grid-template: minmax(auto, 300px) 1fr / 30px 250px minmax(350px, 1fr);
-        grid-template-areas:  
+        grid-template-areas:
         "left-side" "middle-side-top" "right-side-top"
         "left-side" "middle-side-bottom" "right-side-bottom";
 	}
@@ -248,20 +248,20 @@ section{
         top: 0;
         display: grid;
         grid-template: minmax(auto, 300px) 1fr / 60px 250px 1fr;
-        grid-template-areas:  
+        grid-template-areas:
         "left-side" "middle-side-top" "right-side-top"
         "left-side" "middle-side-bottom" "right-side-bottom";
 	}
 }
 
 /* ----------------left-side----------------------------------------------------------------- */
-.left-side { 
+.left-side {
     grid-area: "left-side";
     grid-row: span 2;
     background-color: #ffca05;
 }
 /* ----------------middle-side-top----------------------------------------------------------------- */
-.middle-side-top { 
+.middle-side-top {
     display: block;
     width: auto;
     height: 300px;
@@ -275,16 +275,16 @@ section{
     top: 0;
     left: 0;
     object-fit: cover;
-}   
+}
 /* .figure-middle-side-top{
     display: block;
     +
     width: 100%;
     height: min-content;
-    
+
 } */
 /* ----------------right-side-top----------------------------------------------------------------- */
-.right-side-top { 
+.right-side-top {
     width: 100%;
     height: 300px;
     grid-area: "right-side-top";
@@ -344,10 +344,10 @@ section{
     margin: 0 0 5px 0;
 }
 @media (max-width: 400px){
-    .right-side-top { 
+    .right-side-top {
         width: 100%;
         height: 200px;
-        
+
     }
     .right-side-top__title{
         font-size: 40px;
@@ -381,7 +381,7 @@ section{
     }
 }
 /* ----------------middle-side-bottom--------------------------------------------------- */
-.middle-side-bottom { 
+.middle-side-bottom {
     width: 100%;
     grid-area: "middle-side-bottom";
     background-color: #292934;
@@ -411,7 +411,7 @@ section{
     padding: 5px;
 }
 /* ----------------right-side-bottom"--------------------------------------------------- */
-.right-side-bottom { 
+.right-side-bottom {
     width: 100%;
     grid-area: "right-side-bottom";
     background-color: #22222d;
@@ -440,7 +440,7 @@ section{
     content: "";
     height: 40%;
     width: 80%;
-    background: url(/img/logo-color-en.png) 0 0 / 75px 20px no-repeat;
+    background: url(../img/logo-color-en.png) 0 0 / 75px 20px no-repeat;
     position: absolute;
     top: 27px;
     left: 95px;
@@ -470,18 +470,18 @@ code span{
     font-size: 16px;
     display: block;
 }
-.one-tab { 
+.one-tab {
     padding: 0 0 0 10px;
 }
-.two-tab { 
+.two-tab {
     padding: 0 0 0 30px;
 }
-.three-tab { 
+.three-tab {
     padding: 0 0 0 50px;
 }
 
 /* ----------------Footer------------------------------------- */
-.footer { 
+.footer {
     position: relative;
     width: 100%;
     left: 0;
@@ -501,11 +501,11 @@ code span{
     .footer {
         display: grid;
         grid-template: repeat(3, 1fr) / 0.7fr 1fr ;
-        grid-area: 
-            "footer-github-logo" 
+        grid-area:
+            "footer-github-logo"
             "footer__rsschool"
             "footer-github-text";
-            
+
     }
     .footer__year{
         grid-column: span 2;
@@ -516,7 +516,7 @@ code span{
         order: 1;
     }
 }
-.footer-github-logo { 
+.footer-github-logo {
     grid-area: "footer-github-logo";
     width: 100%;
     height: 40px;
@@ -536,13 +536,13 @@ code span{
     top: 10px;
     left: 10px;
     position: absolute;
-    
+
 }
 .footer__year {
     grid-area: "footer__year";
     justify-self: center;
 }
-.footer__rsschool { 
+.footer__rsschool {
     grid-area: "footer__rsschool";
     position: relative;
     height: 40px;
