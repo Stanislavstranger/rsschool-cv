@@ -182,6 +182,10 @@ span {
     font-size: 1.25rem;
 }
 
+.header__button {
+    background-color: #e1e1e1;
+}
+
 .header__burger {}
 
 .header__burger-container {
